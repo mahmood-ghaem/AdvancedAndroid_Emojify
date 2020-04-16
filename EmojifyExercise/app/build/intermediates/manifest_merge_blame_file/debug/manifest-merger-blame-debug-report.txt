@@ -1,0 +1,102 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="nl.mahmood.emojifyexercise"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml
+10
+11    <!-- TODO (9) add 'uses-feature, uses-permission, provider' -->
+12    <uses-feature
+12-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:6:5-8:35
+13        android:name="android.hardware.camera"
+13-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:7:9-47
+14        android:required="true" />
+14-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:8:9-32
+15
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:10:5-81
+16-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:10:22-78
+17
+18    <application
+18-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:11:5-45:19
+19        android:allowBackup="true"
+19-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:12:9-37
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.1.0] C:\Users\Mahmood\.gradle\caches\transforms-2\files-2.1\da95e0dd41fd0c634661df2a0f122634\core-1.1.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:13:9-45
+23        android:label="@string/app_name"
+23-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:14:9-43
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:15:9-56
+25        android:supportsRtl="true"
+25-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:16:9-37
+26        android:testOnly="true"
+27        android:theme="@style/AppTheme" >
+27-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:17:9-42
+28        <provider
+28-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:18:9-26:20
+29            android:name="androidx.core.content.FileProvider"
+29-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:19:13-62
+30            android:authorities="nl.mahmood.emojifyexercise.fileprovider"
+30-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:20:13-74
+31            android:exported="false"
+31-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:21:13-37
+32            android:grantUriPermissions="true" >
+32-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:22:13-47
+33            <meta-data
+33-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:23:13-25:54
+34                android:name="android.support.FILE_PROVIDER_PATHS"
+34-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:24:17-67
+35                android:resource="@xml/file_paths" />
+35-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:25:17-51
+36        </provider>
+37        <!--
+38        <provider
+39            android:name="androidx.core.content.FileProvider"
+40            android:authorities="nl.mahmood.emojifyexercise.fileprovider"
+41            android:exported="false"
+42            android:grantUriPermissions="true">
+43            <meta-data
+44                android:name="android.support.FILE_PROVIDER_PATHS"
+45                android:resource="@xml/file_paths" />
+46        </provider>
+47        -->
+48        <activity android:name="nl.mahmood.emojifyexercise.MainActivity" >
+48-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:38:9-44:20
+48-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:38:19-49
+49            <intent-filter>
+49-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:39:13-43:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:40:17-71
+50-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:40:25-68
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:42:17-79
+52-->C:\Users\Mahmood\Desktop\EmojifyExercise\app\src\main\AndroidManifest.xml:42:27-76
+53            </intent-filter>
+54        </activity>
+55        <activity
+55-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Mahmood\.gradle\caches\transforms-2\files-2.1\e2c213d4dfcecf7d0961805c3c2450f7\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+56            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+56-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Mahmood\.gradle\caches\transforms-2\files-2.1\e2c213d4dfcecf7d0961805c3c2450f7\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+57            android:exported="false"
+57-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Mahmood\.gradle\caches\transforms-2\files-2.1\e2c213d4dfcecf7d0961805c3c2450f7\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+58            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+58-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Mahmood\.gradle\caches\transforms-2\files-2.1\e2c213d4dfcecf7d0961805c3c2450f7\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+59
+60        <meta-data
+60-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Mahmood\.gradle\caches\transforms-2\files-2.1\752a983649401b2c06f8f162da3a35f7\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+61            android:name="com.google.android.gms.version"
+61-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Mahmood\.gradle\caches\transforms-2\files-2.1\752a983649401b2c06f8f162da3a35f7\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+62            android:value="@integer/google_play_services_version" />
+62-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Mahmood\.gradle\caches\transforms-2\files-2.1\752a983649401b2c06f8f162da3a35f7\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+63    </application>
+64
+65</manifest>
